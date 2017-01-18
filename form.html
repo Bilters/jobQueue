@@ -1,0 +1,85 @@
+<form method="post" name="jobCreation">
+    <p class="formParagraph">
+        <label for="projectNumber">
+            <span>Project number: </span>
+            <input type="text" id="projectNumber" name="projectNumber" required maxlength="6"/>
+        </label>
+    </p>
+    <p>
+        <label for="quoteItem">
+            <span>Quote item: </span>
+            <input type="text" id="quoteItem" name="quoteItem" required maxlength="2" />
+        </label>
+    </p>
+    <p>
+        <label for="projectName">
+            <span>Project name: </span>
+            <input type="text" id="projectName" name="projectName" required autocomplete="on"/>
+        </label>
+    </p>
+    <p>
+        <label for="projectManager">
+            <span>Project manager: </span>
+            <select id="projectManager" name="projectManager">
+                <option disabled selected>Please select:</option>
+                <option value="pm-MaKo">Martijn Koerts</option>
+                <option value="pm-LvG">Linda van Gend</option>
+                <option value="pm-MaNe">Marlijn Nelissen</option>
+                <!--
+                <option value="pm-AnZu">Anne Zumpe</option>
+                <option value="pm-CDF">Cedrick Duhamel-Flynn</option>
+                <option value="pm-CPD">Claus-Peter Deißler</option>
+                <option value="pm-DaHe">David Hegarty</option>
+                <option value="pm-JaRa">James Randle</option>
+                <option value="pm-JaRi">Jan Rietzke</option>
+                <option value="pm-JoRa">Joseph Ravenscroft</option>
+                <option value="pm-JuKa">Julian Kaletta</option>
+                <option value="pm-LeEu">Lena Euchenhofer</option>
+                <option value="pm-PeKn">Peter Knapp</option>
+                <option value="pm-SaFe">Sabine Feil</option>
+                <option value="pm-StGe">Stefan Geiger</option>
+                <option value="pm-StSh">Stephanie Shum</option>
+                <option value="pm-TDT">Thieu Duy Thai</option>
+                <option value="pm-VaCi">Vanessa Cisz</option>
+                <option value="pm-VaKe">Vanessa Keller</option>
+                -->
+            </select>
+        </label>
+    </p>
+    <p>
+        <label for="designer">
+            <span>Designer: </span>
+            <select id="designer" name="designer">
+                <option disabled selected>Please select:</option>
+                <option value="ds-SaNi">Sander Nijssen</option>
+                <option value="ds-MoRa">Monique Ravensburg</option>
+                <option value="ds-RvG">Robbert van Geesink</option>
+                <option value="ds-LdB">Luc de Bruijn</option>
+            </select>
+        </label>
+    </p>
+    <p>
+        <label for="sourceFiles">
+            <span>Source files: </span>
+            <input type="text" id="sourceFiles" name="sourceFiles" required autocomplete="on"/>
+        </label>
+    </p>
+    <p>
+        <label for="deliveryFormat">
+            <span>Delivery format: </span>
+            <input type="text" id="deliveryFormat" name="deliveryFormat" required autocomplete="on"/>
+        </label>
+    </p>
+    <p>
+        <label for="estimatedTime">
+            <span>Estimated time: </span>
+            <input type="number" id="estimatedTime" name="estimatedTime" required min="0.25" step="0.25"/>
+        </label>
+    </p>
+    <p>
+        <label for="deadline">
+            <span>Deadline: </span>
+            <input type="text" id="deadline" name="deadline" required/>
+        </label>
+    </p>
+</form>

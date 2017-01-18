@@ -1,0 +1,36 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+#userSetup {
+    margin: auto;
+    width: 250px;
+    text-align: center;
+    background-color: pink;
+    height: 100%;
+}
+
+#nameInput {
+    width: 244px;
+    line-height: 3em;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+#submitJob {
+    width: 250px;
+    height: 40px;
+    display: block;
+    font-family: 'Raleway';
+    font-weight: 500;
+    backgroud-color: rgba(0, 0, 0, 0.2);
+}
+
+.formParagraph {
+    display: inline-block;
+}
