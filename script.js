@@ -20,7 +20,7 @@
 
 function submitJobPop() {
 
-    var TheURL = "form.html";
+    var TheURL = "modals/briefingForm.html";
     var PopWidth = "400";
     var PopHeight = "400";
     var PosTop = "200";
