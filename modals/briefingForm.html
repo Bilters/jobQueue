@@ -1,11 +1,11 @@
-<form method="post" name="jobCreation">
+<form method="get" name="jobCreation">
     <p class="formParagraph">
         <label for="projectNumber">
             <span>Project number: </span>
             <input type="text" id="projectNumber" name="projectNumber" required maxlength="6"/>
         </label>
     </p>
-    <p>
+    <!-- <p>
         <label for="quoteItem">
             <span>Quote item: </span>
             <input type="text" id="quoteItem" name="quoteItem" required maxlength="2" />
@@ -22,9 +22,9 @@
             <span>Project manager: </span>
             <select id="projectManager" name="projectManager">
                 <option disabled selected>Please select:</option>
-                <option value="pm-MaKo">Martijn Koerts</option>
-                <option value="pm-LvG">Linda van Gend</option>
-                <option value="pm-MaNe">Marlijn Nelissen</option>
+                <option value="pm-MaKo">ProjectManager MK</option>
+                <option value="pm-LvG">ProjectManager LvG</option>
+                <option value="pm-MaNe">ProjectManger MN</option>
             </select>
         </label>
     </p>
@@ -33,10 +33,10 @@
             <span>Designer: </span>
             <select id="designer" name="designer">
                 <option disabled selected>Please select:</option>
-                <option value="ds-SaNi">Sander Nijssen</option>
-                <option value="ds-MoRa">Monique Ravensburg</option>
-                <option value="ds-RvG">Robbert van Geesink</option>
-                <option value="ds-LdB">Luc de Bruijn</option>
+                <option value="ds-SaNi">SaNi</option>
+                <option value="ds-MoRa">MoRa</option>
+                <option value="ds-RvG">RvG</option>
+                <option value="ds-LdB">LdB</option>
             </select>
         </label>
     </p>
@@ -64,4 +64,13 @@
             <input type="text" id="deadline" name="deadline" required/>
         </label>
     </p>
+    <p>
+        <label for="briefing">
+            <span>Briefing: </span>
+            <textarea id="briefing" name="briefing" rows="8" cols="40" required></textarea>
+        </label>
+    </p> -->
+    <input type="submit" id="submitForm" onsubmit="return checkForm();"/>
 </form>
+
+<script src="../script.js"></script>

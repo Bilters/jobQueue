@@ -17,9 +17,22 @@
 // });
 
 
+function checkProjectNumber() {
+    var dateGeneration = new Date();
+    var loProjectNumber = 120000;
+    var hiProjectNumber = dateGeneration.getYear() - 100 + "" + dateGeneration.getMonth() + 1 + "" + 99;
+    var projectNumber = document.jobCreation.projectNumber.value;
+    if (isNaN(projectNumber)) {
+        alert("Project numbers are numbers not letters");
+    } else {
+        if (projectNumber < loProjectNumber || projectNumber > hiProjectNumber) {
+            alert("This is not a project Number");
+        }
+    }
+}
+
 
 function submitJobPop() {
-
     var TheURL = "modals/briefingForm.html";
     var PopWidth = "400";
     var PopHeight = "400";
@@ -30,4 +43,5 @@ function submitJobPop() {
     var PopUp = open(TheURL, "box", SettingSpopUpBox);
 }
 
+document.querySelector('#submitForm').addEventListener('click', checkProjectNumber);
 document.querySelector('#submitJob').addEventListener('click', submitJobPop);
