@@ -1,23 +1,24 @@
-<form method="get" name="jobCreation">
-    <p class="formParagraph">
+<!DOCTYPE html>
+<form method="GET" onsubmit="return checkForm()" name="jobCreation" >
+    <p>
         <label for="projectNumber">
             <span>Project number: </span>
             <input type="text" id="projectNumber" name="projectNumber" required maxlength="6"/>
         </label>
     </p>
-    <!-- <p>
+    <p>
         <label for="quoteItem">
             <span>Quote item: </span>
             <input type="text" id="quoteItem" name="quoteItem" required maxlength="2" />
         </label>
     </p>
-    <p>
+    <!-- <p>
         <label for="projectName">
             <span>Project name: </span>
             <input type="text" id="projectName" name="projectName" required autocomplete="on"/>
         </label>
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
         <label for="projectManager">
             <span>Project manager: </span>
             <select id="projectManager" name="projectManager">
@@ -27,8 +28,8 @@
                 <option value="pm-MaNe">ProjectManger MN</option>
             </select>
         </label>
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
         <label for="designer">
             <span>Designer: </span>
             <select id="designer" name="designer">
@@ -39,38 +40,38 @@
                 <option value="ds-LdB">LdB</option>
             </select>
         </label>
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
         <label for="sourceFiles">
             <span>Source files: </span>
             <input type="text" id="sourceFiles" name="sourceFiles" required autocomplete="on"/>
         </label>
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
         <label for="deliveryFormat">
             <span>Delivery format: </span>
             <input type="text" id="deliveryFormat" name="deliveryFormat" required autocomplete="on"/>
         </label>
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
         <label for="estimatedTime">
             <span>Estimated time: </span>
             <input type="number" id="estimatedTime" name="estimatedTime" required min="0.25" step="0.25"/>
         </label>
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
         <label for="deadline">
             <span>Deadline: </span>
             <input type="text" id="deadline" name="deadline" required/>
         </label>
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
         <label for="briefing">
             <span>Briefing: </span>
             <textarea id="briefing" name="briefing" rows="8" cols="40" required></textarea>
         </label>
     </p> -->
-    <input type="submit" id="submitForm" onsubmit="return checkForm();"/>
+    <input type="submit" id="submitForm"/>
 </form>
 
 <script src="../script.js"></script>
