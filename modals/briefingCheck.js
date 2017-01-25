@@ -20,7 +20,7 @@ function checkForm() {
         if (document.jobCreation.quoteItem.value < 1) {
             alert("A quote item should always be higher than one!");
             return false;
-        } else if(isNaN(document.jobCreation.quoteItem.value)) {
+        } else if (isNaN(document.jobCreation.quoteItem.value)) {
             alert("QuoteItems are numbers");
             return false;
         }
