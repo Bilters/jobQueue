@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<form method="GET" onsubmit="return checkForm()" name="jobCreation" >
+<script src="briefingCheck.js"></script>
+
+<form method="GET" onsubmit="checkForm()" name="jobCreation">
     <p>
         <label for="projectNumber">
             <span>Project number: </span>
@@ -9,15 +10,15 @@
     <p>
         <label for="quoteItem">
             <span>Quote item: </span>
-            <input type="text" id="quoteItem" name="quoteItem" required maxlength="2" />
+            <input type="numbers" id="quoteItem" name="quoteItem" required maxlength="2" />
         </label>
     </p>
-    <!-- <p>
+    <p>
         <label for="projectName">
             <span>Project name: </span>
             <input type="text" id="projectName" name="projectName" required autocomplete="on"/>
         </label>
-    </p> -->
+    </p>
     <!-- <p>
         <label for="projectManager">
             <span>Project manager: </span>
@@ -73,5 +74,3 @@
     </p> -->
     <input type="submit" id="submitForm"/>
 </form>
-
-<script src="../briefingCheck.js"></script>
