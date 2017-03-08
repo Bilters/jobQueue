@@ -1,7 +1,7 @@
 <script src="briefingCheck.js"></script>
 <link rel="stylesheet" type="text/css" href="style/style.css">
 <h1>Briefing form</h1>
-<form method="GET" onsubmit="checkForm()" name="jobCreation">
+<form onsubmit="return validate()" method="POST" name="jobCreation" action="index.html">
     <p>
         <label for="projectNumber">
                 <span>Project number: </span>
@@ -12,71 +12,71 @@
         <label for="quoteItem">
                 <span>Quote item: </span>
                 <input type="numbers" id="quoteItem" name="quoteItem" required maxlength="2" />
-            </label>
+        </label>
     </p>
     <p>
         <label for="projectName">
                 <span>Project name: </span>
                 <input type="text" id="projectName" name="projectName" required autocomplete="on"/>
-            </label>
+        </label>
     </p>
     <p>
         <label for="projectManager">
-                <span>Project manager: </span>
-                <select required id="projectManager" name="projectManager">
-                    <option value="" disabled hidden selected>Please select:</option>
-                    <option value="pm-MaKo">ProjectManager MK</option>
-                    <option value="pm-LvG">ProjectManager LvG</option>
-                    <option value="pm-MaNe">ProjectManger MN</option>
-                </select>
-            </label>
+            <span>Project manager: </span>
+            <select required id="projectManager" name="projectManager">
+                <option value="" disabled hidden selected>Please select:</option>
+                <option value="pm-MaKo">ProjectManager MK</option>
+                <option value="pm-LvG">ProjectManager LvG</option>
+                <option value="pm-MaNe">ProjectManger MN</option>
+            </select>
+        </label>
     </p>
     <p>
         <label for="designer">
-                <span>Designer: </span>
-                <select id="designer" name="designer">
-                    <option value="" disabled hidden selected>Please select:</option>
-                    <option value="ds-SaNi">SaNi</option>
-                    <option value="ds-MoRa">MoRa</option>
-                    <option value="ds-RvG">RvG</option>
-                    <option value="ds-LdB">LdB</option>
-                </select>
-            </label>
+            <span>Designer: </span>
+            <select id="designer" name="designer">
+                <option value="" disabled hidden selected>Please select:</option>
+                <option value="ds-SaNi">SaNi</option>
+                <option value="ds-MoRa">MoRa</option>
+                <option value="ds-RvG">RvG</option>
+                <option value="ds-LdB">LdB</option>
+            </select>
+        </label>
     </p>
     <p>
         <label for="sourceFiles">
-                <span>Source files: </span>
-                <input type="text" id="sourceFiles" name="sourceFiles" required autocomplete="on"/>
-            </label>
+            <span>Source files: </span>
+            <input type="text" id="sourceFiles" name="sourceFiles" required autocomplete="on"/>
+        </label>
     </p>
     <p>
         <label for="deliveryFormat">
-                <span>Delivery format: </span>
-                <input type="text" id="deliveryFormat" name="deliveryFormat" required autocomplete="on"/>
-            </label>
+            <span>Delivery format: </span>
+            <input type="text" id="deliveryFormat" name="deliveryFormat" required autocomplete="on"/>
+        </label>
     </p>
     <p>
         <label for="estimatedTime">
-                <span>Estimated time: </span>
-                <input type="number" id="estimatedTime" name="estimatedTime" required min="0.25" step="0.25"/>
-            </label>
+            <span>Estimated time: </span>
+            <input type="number" id="estimatedTime" name="estimatedTime" required min="0.25" step="0.25"/>
+        </label>
     </p>
     <p>
         <label for="deadline">
-                <span>Deadline: </span>
-                <input type="text" id="deadline" name="deadline" required/>
-            </label>
+            <span>Deadline: </span>
+            <input type="text" id="deadline" name="deadline" required/>
+        </label>
     </p>
     <p>
         <label for="briefing">
-                <span class="briefing-span">Briefing: </span>
-                <textarea id="briefing" name="briefing" rows="10" cols="34" required></textarea>
-            </label>
+            <span class="briefing-span">Briefing: </span>
+            <textarea id="briefing" name="briefing" rows="10" cols="34" required></textarea>
+        </label>
     </p>
-    <!-- <p>
-            <label for="briefing">
-                <input type="file" />
-            </label>
-        </p> -->
+    <p>
+        <label for="briefing">
+            <input type="file" />
+        </label>
+    </p>
     <input type="submit" id="submitForm" />
 </form>
