@@ -1,0 +1,101 @@
+* {
+    border: none;
+    background: #FFF3E0;
+}
+
+form {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    width: 400px;
+    min-width: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+legend {
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder {
+    text-shadow: 1px 1px 1px #f7f7f7;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+::-moz-placeholder {
+    text-shadow: 0 1px 1px #f7f7f7;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+:-ms-input-placeholder {
+    text-shadow: 0 1px 1px #f7f7f7;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+form input[type=text], [type=number] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    margin: 5px auto;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #FF7043;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form input[type=text]:active, .placeholder textarea form input[type=text]:focus {
+    outline: none;
+    border-color: silver;
+    background-color: #f7f7f7;
+}
+
+form input[type=number]:active, .placeholder textarea form input[type=number]:focus {
+    outline: none;
+    border-color: silver;
+    background-color: #f7f7f7;
+}
+
+form input[type=submit] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FF7043;
+    padding: 10px;
+    color: #f7f7f7;
+    border: 1px solid #F4511E;
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+
+select, textarea {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    border-bottom: 1px solid #FF7043;
+    border-radius: 0px;
+    color: #555;
+    width: 100%;
+    background-color: #f7f7f7;
+    font-size: inherit;
+    margin: 5px auto;
+}

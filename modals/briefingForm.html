@@ -1,82 +1,56 @@
-<script src="briefingCheck.js"></script>
+<script src="js/briefingCheck.js"></script>
 <link rel="stylesheet" type="text/css" href="style/style.css">
-<h1>Briefing form</h1>
-<form onsubmit="return validate()" method="POST" name="jobCreation" action="index.html">
-    <p>
+<link rel="stylesheet" type="text/css" href="style/briefingForm.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="briefingContainer">
+    <form onsubmit="return validate()" method="POST" name="jobCreation" action="index.html">
+        <legend>Briefing form</legend>
+
         <label for="projectNumber">
-                <span>Project number: </span>
-                <input type="text" id="projectNumber" name="projectNumber" required maxlength="6"/>
-            </label>
-    </p>
-    <p>
+        <input type="text" id="projectNumber" name="projectNumber" required maxlength="6" placeholder="Project number"/>
+        <i class="fa fa-tasks input-icon" aria-hidden="true"></i>
+    </label>
         <label for="quoteItem">
-                <span>Quote item: </span>
-                <input type="numbers" id="quoteItem" name="quoteItem" required maxlength="2" />
-        </label>
-    </p>
-    <p>
-        <label for="projectName">
-                <span>Project name: </span>
-                <input type="text" id="projectName" name="projectName" required autocomplete="on"/>
-        </label>
-    </p>
-    <p>
+        <input type="number" id="quoteItem" name="quoteItem" required maxlength="2" placeholder="Quote item"/>
+    </label>
+        <!-- <label for="projectName">
+        <input type="text" id="projectName" name="projectName" required autocomplete="on" placeholder="Project name"/>
+    </label>
         <label for="projectManager">
-            <span>Project manager: </span>
-            <select required id="projectManager" name="projectManager">
-                <option value="" disabled hidden selected>Please select:</option>
-                <option value="pm-MaKo">ProjectManager MK</option>
-                <option value="pm-LvG">ProjectManager LvG</option>
-                <option value="pm-MaNe">ProjectManger MN</option>
-            </select>
-        </label>
-    </p>
-    <p>
+        <select required id="projectManager" name="projectManager">
+            <option value="" disabled hidden selected>Project manager</option>
+            <option value="pm-MaKo">MK</option>
+            <option value="pm-LvG">LvG</option>
+            <option value="pm-MaNe">MN</option>
+        </select>
+    </label>
         <label for="designer">
-            <span>Designer: </span>
-            <select id="designer" name="designer">
-                <option value="" disabled hidden selected>Please select:</option>
-                <option value="ds-SaNi">SaNi</option>
-                <option value="ds-MoRa">MoRa</option>
-                <option value="ds-RvG">RvG</option>
-                <option value="ds-LdB">LdB</option>
-            </select>
-        </label>
-    </p>
-    <p>
+        <select id="designer" name="designer">
+            <option value="" disabled hidden selected>Designer</option>
+            <option value="ds-SaNi">SaNi</option>
+            <option value="ds-MoRa">MoRa</option>
+            <option value="ds-RvG">RvG</option>
+            <option value="ds-LdB">LdB</option>
+        </select>
+    </label>
         <label for="sourceFiles">
-            <span>Source files: </span>
-            <input type="text" id="sourceFiles" name="sourceFiles" required autocomplete="on"/>
-        </label>
-    </p>
-    <p>
-        <label for="deliveryFormat">
-            <span>Delivery format: </span>
-            <input type="text" id="deliveryFormat" name="deliveryFormat" required autocomplete="on"/>
-        </label>
-    </p>
-    <p>
+        <input type="text" id="sourceFiles" name="sourceFiles" required autocomplete="on" placeholder="Source files"/>
+    </label>
+        <label>
+        <input type="text" id="deliveryFormat" name="deliveryFormat" required autocomplete="on" placeholder="Delivery format" />
+    </label>
         <label for="estimatedTime">
-            <span>Estimated time: </span>
-            <input type="number" id="estimatedTime" name="estimatedTime" required min="0.25" step="0.25"/>
-        </label>
-    </p>
-    <p>
+        <input type="number" id="estimatedTime" name="estimatedTime" required min="0.25" step="0.25" placeholder="Estimated time"/>
+    </label>
         <label for="deadline">
-            <span>Deadline: </span>
-            <input type="text" id="deadline" name="deadline" required/>
-        </label>
-    </p>
-    <p>
+        <input type="text" id="deadline" name="deadline" required placeholder="Deadline"/>
+    </label>
         <label for="briefing">
-            <span class="briefing-span">Briefing: </span>
-            <textarea id="briefing" name="briefing" rows="10" cols="34" required></textarea>
-        </label>
-    </p>
-    <p>
-        <label for="briefing">
-            <input type="file" />
-        </label>
-    </p>
-    <input type="submit" id="submitForm" />
+        <textarea id="briefing" name="briefing" rows="10" cols="34" required placeholder="Briefing"></textarea>
+    </label> -->
+        <!-- <label for="attachment">
+        <input type="file" name="attachment"/>
+    </label> -->
+        <input type="submit" id="submitForm" />
 </form>
+</div>
