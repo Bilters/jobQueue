@@ -3,7 +3,7 @@ document.querySelector('#submitJob').addEventListener('click', submitJobPop);
 function submitJobPop() {
     var w = window.innerWidth;
     var h = window.innerHeight;
-    var TheURL = "modals/briefingForm.html";
+    var TheURL = "modals/briefingForm.php";
     var PopWidth = w / 2;
     var PopHeight = h / 1.5;
     var PosTop = w / 2;
